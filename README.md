@@ -5,7 +5,7 @@ An automatic curtain that wakes you up in the morning. The curtain opens gradual
 
 # Step 1: Build the circuit
 
-![Schematics](https://raw.githubusercontent.com/erhanalankus/Arduino-Wake-Up-Light/master/schematics_.jpg)
+![Schematics](https://github.com/nicolaielhoj/Wakeup-Curtain/blob/master/servo%20schematic.png)
 
 # Step 2: Fit the servo in the laser cut box, and attach servo to curtain
 
