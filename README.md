@@ -9,12 +9,12 @@ An automatic curtain that wakes you up in the morning. The curtain opens gradual
 
 # Step 2: Fit the servo in the laser cut box, and attach servo to curtain
 
-![joint+servo+box](https://github.com/nicolaielhoj/Wakeup-Curtain/blob/master/box%2Bservo.png)
-
 - Laser cut the box and assemble it 
 - Fit the servo in it with the moving arm sticking out of the box. 
 - Screw the 3d printed joint to the servo, and fit the joint inside the cylinder that the curtain rolls around.
 - Mount the curtain to the wall
+
+![joint+servo+box](https://github.com/nicolaielhoj/Wakeup-Curtain/blob/master/box%2Bservo.png)
 
 # Step 3: Upload code
 
@@ -22,7 +22,8 @@ Go to line 27, and set the how many second the curtain should roll up every minu
 
 # Step 4: Using the device
 
+Connect the board via USB adapter to the timer that is connected to an electrical outlet. You can now set the start time on the timer to 15 minutes before you want to be out of bed. When the time is up, the curtain gradually starts to roll up, and are all the way up after 15 minutes, letting in natural light from the outside
+
 ![timer setup](https://github.com/nicolaielhoj/Wakeup-Curtain/blob/master/timer.jpg)
 
-Connect the board via USB adapter to the timer that is connected to an electrical outlet. You can now set the start time on the timer to 15 minutes before you want to be out of bed. When the time is up, the curtain gradually starts to roll up, and are all the way up after 15 minutes, letting in natural light from the outside
 
