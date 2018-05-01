@@ -1,5 +1,5 @@
 # Arduino Wakeup Curtain
-An automatic curtain that wakes you up in the morning. The curtain opens gradually over the course of 15 minutes, to ensure a gentle wakeup.
+An automatic curtain that wakes you up in the morning. The curtain opens gradually over the course of 15 minutes, to ensure a gentle wakeup. The curtain rolls for a set amount of seconds every minute and then pauses, this is repeated 15 times, once a minute.
 
 ![The curtain](https://github.com/nicolaielhoj/Wakeup-Curtain/blob/master/DSC09540LR.png)
 
@@ -11,14 +11,18 @@ An automatic curtain that wakes you up in the morning. The curtain opens gradual
 
 ![joint+servo+box](https://github.com/nicolaielhoj/Wakeup-Curtain/blob/master/box%2Bservo.png)
 
-Before uploading the sketch to your Arduino, change the values at line 93 with the current values for the time and date and uncomment the line. Upload the sketch. Comment out line 93 and upload again. You can see time and date on the serial monitor. The time won't be lost unless you remove the battery from the DS3231 RTC module. I may add the option to edit the time later, pull requests are welcome.
+- Laser cut the box and assemble it 
+- Fit the servo in it with the moving arm sticking out of the box. 
+- Screw the 3d printed joint to the servo, and fit the joint inside the cylinder that the curtain rolls around.
+- Mount the curtain to the wall
 
-# Step 3: Set the remote
+# Step 3: Upload code
 
-Go to line 148, there you will find what happens for which remote button. Those values most likely won't work with the remote that you are using. Watch this video and you'll learn how to setup your remote: https://youtu.be/ftdJ0R_5NZk The remote is optional.
+Go to line 27, and set the how many second the curtain should roll up every minute, depending on how tall the window is. 
 
 # Step 4: Using the device
 
-There are three buttons. First two buttons set the alarm, the third button toggles alarm on/off. When the alarm is active, brightness of the lights will increase 1 unit every 7 seconds. Maximum brightness value is 255. Current brightness value is displayed on the top right of the LCD screen. It will take 30 minutes to reach full brightness and after the time stated in the alarmDuration variable(3 hours), the lights will turn off. You can change alarm duration at line 49 and the speed at line 145. Pressing any button will deactivate the alarm.
+![timer setup](https://github.com/nicolaielhoj/Wakeup-Curtain/blob/master/timer.jpg)
 
+Connect the board via USB adapter to the timer that is connected to an electrical outlet. You can now set the start time on the timer to 15 minutes before you want to be out of bed. When the time is up, the curtain gradually starts to roll up, and are all the way up after 15 minutes, letting in natural light from the outside
 
